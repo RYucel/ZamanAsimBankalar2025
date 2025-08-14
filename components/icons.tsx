@@ -18,12 +18,14 @@ export const SearchIcon: React.FC<{ className?: string }> = ({ className = "h-5 
     </svg>
 );
 
-export const TRFlagIcon: React.FC<{ className?: string }> = ({ className = "w-8 h-6 rounded-sm" }) => (
+export const TRFlagIcon: React.FC<{ className?: string }> = ({ className = "w-8 h-6 rounded-sm border border-gray-200" }) => (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 24" className={className}>
-        <rect width="32" height="24" fill="#E30A17"/>
-        <path d="M13.5 12a5 5 0 100 .001z" fill="#fff"/>
-        <path d="M15 12a4 4 0 100 .001z" fill="#E30A17"/>
-        <path d="M19.5 12l-2.43-1.644-1.5 2.598 1.5-2.598L17.07 10.356 15 8l1.5 2.598 2.43-1.644-1.5 2.598L19.5 12z" fill="#fff"/>
+        <rect width="32" height="24" fill="#FFFFFF"/>
+        <rect y="2.5" width="32" height="3" fill="#E30A17"/>
+        <rect y="18.5" width="32" height="3" fill="#E30A17"/>
+        <path d="M14.5 12a3.5 3.5 0 1 0 0 .001z" fill="#E30A17"/>
+        <path d="M15.5 12a2.8 2.8 0 1 0 0 .001z" fill="#FFFFFF"/>
+        <path d="M18.25,10.6l0.8,2.15l2.35,-0.5l-1.8,1.4l0.8,2.15l-1.8,-1.4l-1.8,1.4l0.8,-2.15l-1.8,-1.4l2.35,0.5z" fill="#E30A17"/>
     </svg>
 );
 
