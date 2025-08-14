@@ -68,7 +68,7 @@ const App: React.FC = () => {
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800 tracking-tight">
             {t.title}
           </h1>
-          <p className="mt-3 text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="mt-3 text-lg text-gray-600 max-w-2xl mx-auto whitespace-pre-line">
             {t.description}
           </p>
         </header>
