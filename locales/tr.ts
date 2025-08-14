@@ -9,4 +9,5 @@ export const tr = {
   noRecordsFound: 'Kayıt bulunamadı. Lütfen aramanızı değiştirin.',
   footerInfo: 'Bu araç yalnızca bilgilendirme amaçlıdır. Talepleriniz için lütfen ilgili banka ile iletişime geçin.',
   footerCopyright: 'Zamanaşımına Uğramış Mevduat Bulucu. Tüm Hakları Saklıdır.',
+  referenceLink: "Veriler KKTC Merkez Bankası'ndan alınmıştır. Orijinal belgeyi görüntülemek için tıklayın.",
 };

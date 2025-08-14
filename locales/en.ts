@@ -9,4 +9,5 @@ export const en = {
   noRecordsFound: 'No records found. Try adjusting your search.',
   footerInfo: 'This is a tool for informational purposes only. Please contact the respective bank for any claims.',
   footerCopyright: 'Unclaimed Deposits Finder. All Rights Reserved.',
+  referenceLink: 'Data sourced from the official TRNC Central Bank. Click to view the original document.',
 };

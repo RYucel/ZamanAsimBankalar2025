@@ -2,7 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { allRecords } from './data/records';
 import { AccountRecord, SortConfig, SortKey } from './types';
 import AccountTable from './components/AccountTable';
-import { SearchIcon } from './components/icons';
+import { SearchIcon, ExternalLinkIcon } from './components/icons';
 import { useLocalization } from './context/LocalizationContext';
 import LanguageSwitcher from './components/LanguageSwitcher';
 
@@ -17,6 +17,8 @@ const App: React.FC = () => {
   const { t } = useLocalization();
   const [searchTerm, setSearchTerm] = useState<string>('');
   const [sortConfig, setSortConfig] = useState<SortConfig>({ key: 'accountHolder', direction: 'ascending' });
+
+  const referenceUrl = "https://mb.gov.ct.tr/sites/default/files/28%20Temmuz%202025%20Tarih-153%20Say%C4%B1l%C4%B1%20Resmi%20%20Gazete.pdf";
 
   const filteredAndSortedRecords = useMemo(() => {
     let records: AccountRecord[] = [...allRecords];
@@ -62,7 +64,7 @@ const App: React.FC = () => {
     <div className="min-h-screen bg-gray-50 text-gray-800 relative">
       <LanguageSwitcher />
       <main className="container mx-auto px-4 py-8 md:py-12">
-        <header className="text-center mb-10 pt-8 md:pt-0">
+        <header className="text-center mb-8 pt-8 md:pt-0">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800 tracking-tight">
             {t.title}
           </h1>
@@ -70,6 +72,18 @@ const App: React.FC = () => {
             {t.description}
           </p>
         </header>
+
+        <div className="mb-8 text-center">
+          <a 
+            href={referenceUrl} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-flex items-center text-sm text-blue-600 hover:text-blue-800 hover:underline transition-colors duration-150"
+          >
+            <span>{t.referenceLink}</span>
+            <ExternalLinkIcon className="ml-2 h-4 w-4" />
+          </a>
+        </div>
 
         <div className="bg-white rounded-lg shadow-md p-6">
           <div className="mb-6">
