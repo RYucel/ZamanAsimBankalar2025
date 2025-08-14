@@ -1,0 +1,5 @@
+{
+  "name": "Unclaimed Deposits Finder",
+  "description": "An application to help users search for their names in a list of bank accounts with unclaimed deposits that are approaching the 10-year ownership loss limit. The app provides easy search and sorting functionalities based on the Dieter Rams design philosophy for a minimalist and efficient user experience.",
+  "requestFramePermissions": []
+}
